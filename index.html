@@ -1,0 +1,44 @@
+<!-- This is a static file --><!-- served from your routes in server.js --><!DOCTYPE html><html><head>
+    <title>shader with webcam</title>
+    <meta name="description" content="p5.js CDN Template">
+    <script src="p5.js"></script> 
+    
+    <script src="p5.dom.js"></script>
+  
+    
+  </head>
+
+
+  <body>
+    <script src="sketch.js"></script>
+    <script src="CCapture.js"></script>
+    <script src="webm-writer-0.2.0.js"></script>
+    <script src="download.js"></script>
+    
+    <script> 
+            
+      var capturer = new CCapture({
+        
+        format:'webm',
+        framerate: 60,
+        quality: 100,
+        
+      })
+            
+    </script>
+  
+  
+    <header>
+<!--       <h1>
+        shader with webcam
+      </h1> -->
+    </header>    
+    
+
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>  
+    <script src="button.js" data-style="glitch"></script>
+    
+    
+  
+
+</body></html>
